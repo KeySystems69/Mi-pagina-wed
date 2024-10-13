@@ -1,0 +1,214 @@
+```
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2b2b2b;
+    color: #fff;
+}
+
+header {
+    background-color: #333;
+    padding: 1em;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #444;
+    padding: 0.5em;
+    border-radius: 10px;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+section {
+    background-color: #f7f7f7;
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #337ab7;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #23527c;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+    border-top: 1px solid #444;
+}
+
+/* Estilos para los servidores */
+#servidores {
+    background-color: #4CAF50;
+}
+
+#servidores h2 {
+    color: #fff;
+}
+
+#servidores ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#servidores li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #3e8e41;
+}
+
+#servidores a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para los mods */
+#mods {
+    background-color: #03A9F4;
+}
+
+#mods h2 {
+    color: #fff;
+}
+
+#mods ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#mods li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #0277bd;
+}
+
+#mods a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para los skins */
+#skins {
+    background-color: #FFC107;
+}
+
+#skins h2 {
+    color: #fff;
+}
+
+#skins ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#skins li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ff9800;
+}
+
+#skins a {
+    color: #fff;
+    text-decoration: none;
+}
+```
+
+*script.js*
+
+```
+// Funcionalidad para el menú de navegación
+document.addEventListener("DOMContentLoaded", function() {
+    const nav = document.querySelector("nav");
+    const navLinks = document.querySelectorAll("nav a");
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            navLinks.forEach(otherLink => {
+                otherLink.classList.remove("active");
+            });
+            link.classList.add("active");
+        });
+    });
+});
+
+// Funcionalidad para los servidores
+document.addEventListener("DOMContentLoaded", function() {
+    const servidorLinks = document.querySelectorAll("#servidores a");
+
+    servidorLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            const servidorId = link.dataset.servidorId;
+            const servidorInfo = document.querySelector(`#servidor-${servidorId}`);
+
+            servidorInfo.classList.toggle("visible");
+        });
+    });
+});
+
+// Funcionalidad para los mods
+document.addEventListener("DOMContentLoaded", function() {
+    const modLinks = document
+```
