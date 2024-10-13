@@ -1,0 +1,64 @@
+```
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#servidores">Servidores</a></li>
+                <li><a href="#mods">Mods</a></li>
+                <li><a href="#skins">Skins</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="servidores">
+            <h2>Servidores</h2>
+            <ul>
+                <?php foreach ($servidores as $servidor) { ?>
+                    <li>
+                        <h3><?php echo $servidor['nombre']; ?></h3>
+                        <p><?php echo $servidor['descripcion']; ?></p>
+                        <a href="<?php echo $servidor['enlace']; ?>">Unirse</a>
+                    </li>
+                <?php } ?>
+            </ul>
+        </section>
+        <section id="mods">
+            <h2>Mods</h2>
+            <ul>
+                <?php foreach ($mods as $mod) { ?>
+                    <li>
+                        <h3><?php echo $mod['nombre']; ?></h3>
+                        <p><?php echo $mod['descripcion']; ?></p>
+                        <a href="<?php echo $mod['enlace']; ?>">Descargar</a>
+                    </li>
+                <?php } ?>
+            </ul>
+        </section>
+        <section id="skins">
+            <h2>Skins</h2>
+            <ul>
+                <?php foreach ($skins as $skin) { ?>
+                    <li>
+                        <h3><?php echo $skin['nombre']; ?></h3>
+                        <p><?php echo $skin['descripcion']; ?></p>
+                        <img src="<?php echo $skin['imagen']; ?>" alt="<?php echo $skin['nombre']; ?>">
+                    </li>
+                <?php } ?>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Minecraft Blog</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+```
