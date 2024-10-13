@@ -8,103 +8,13 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #2c0038; /* Morado oscuro */
-    color: #fff; /* Blanco */
+    background-color: #f7f7f7; /* Fondo gris */
 }
 
-/* Colores principales */
-
-.primary-color {
-    background-color: #7a288a; /* Morado neón */
-    color: #fff; /* Blanco */
-}
-
-.secondary-color {
-    background-color: #8b0a1a; /* Rojo oscuro */
-    color: #fff; /* Blanco */
-}
-
-/* Efectos hover */
-
-.primary-color:hover {
-    background-color: #9c33c5; /* Morado neón claro */
-}
-
-.secondary-color:hover {
-    background-color: #a50f2f; /* Rojo oscuro claro */
-}
-
-/* Textos */
-
-h1, h2, h3, h4, h5, h6 {
-    color: #7a288a; /* Morado neón */
-}
-
-p, a {
-    color: #fff; /* Blanco */
-}
-
-a:hover {
-    color: #9c33c5; /* Morado neón claro */
-}
-
-/* Botones */
-
-.button {
-    background-color: #7a288a; /* Morado neón */
-    color: #fff; /* Blanco */
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.button:hover {
-    background-color: #9c33c5; /* Morado neón claro */
-}
-
-/* Enlaces */
-
-.link {
-    text-decoration: none;
-    color: #7a288a; /* Morado neón */
-}
-
-.link:hover {
-    color: #9c33c5; /* Morado neón claro */
-}
-
-/* Fondos */
-
-.background-primary {
-    background-color: #2c0038; /* Morado oscuro */
-}
-
-.background-secondary {
-    background-color: #8b0a1a; /* Rojo oscuro */
-}
-
-/* Bordes */
-
-.border-primary {
-    border: 1px solid #7a288a; /* Morado neón */
-}
-
-.border-secondary {
-    border: 1px solid #8b0a1a; /* Rojo oscuro */
-}
-```
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #2b2b2b;
-    color: #fff;
-}
+/* Encabezado */
 
 header {
-    background-color: #333;
+    background-color: #2c0038; /* Morado oscuro */
     padding: 1em;
     text-align: center;
     border-bottom: 1px solid #444;
@@ -116,9 +26,6 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: space-between;
-    background-color: #444;
-    padding: 0.5em;
-    border-radius: 10px;
 }
 
 nav li {
@@ -126,14 +33,11 @@ nav li {
 }
 
 nav a {
-    color: #fff;
+    color: #fff; /* Blanco */
     text-decoration: none;
-    transition: color 0.2s ease;
 }
 
-nav a:hover {
-    color: #ccc;
-}
+/* Publicaciones y post */
 
 main {
     display: flex;
@@ -143,7 +47,7 @@ main {
 }
 
 section {
-    background-color: #f7f7f7;
+    background-color: #fff; /* Blanco */
     padding: 1em;
     margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -156,24 +60,17 @@ h2 {
     color: #333;
 }
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+article {
+    margin-bottom: 20px;
 }
 
-li {
-    margin-bottom: 10px;
+h3 {
+    font-size: 18px;
+    color: #7a288a; /* Morado neón */
 }
 
-a {
-    text-decoration: none;
-    color: #337ab7;
-    transition: color 0.2s ease;
-}
-
-a:hover {
-    color: #23527c;
+p {
+    color: #666;
 }
 
 img {
@@ -183,127 +80,22 @@ img {
     border-radius: 10px;
 }
 
+a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+a:hover {
+    color: #23527c;
+}
+
+/* Footer */
+
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #2c0038; /* Morado oscuro */
+    color: #fff; /* Blanco */
     padding: 1em;
     text-align: center;
     clear: both;
     border-top: 1px solid #444;
 }
-
-/* Estilos para los servidores */
-#servidores {
-    background-color: #4CAF50;
-}
-
-#servidores h2 {
-    color: #fff;
-}
-
-#servidores ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#servidores li {
-    margin-bottom: 10px;
-    padding: 10px;
-    border-bottom: 1px solid #3e8e41;
-}
-
-#servidores a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Estilos para los mods */
-#mods {
-    background-color: #03A9F4;
-}
-
-#mods h2 {
-    color: #fff;
-}
-
-#mods ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#mods li {
-    margin-bottom: 10px;
-    padding: 10px;
-    border-bottom: 1px solid #0277bd;
-}
-
-#mods a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Estilos para los skins */
-#skins {
-    background-color: #FFC107;
-}
-
-#skins h2 {
-    color: #fff;
-}
-
-#skins ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#skins li {
-    margin-bottom: 10px;
-    padding: 10px;
-    border-bottom: 1px solid #ff9800;
-}
-
-#skins a {
-    color: #fff;
-    text-decoration: none;
-}
-```
-
-*script.js*
-
-```
-// Funcionalidad para el menú de navegación
-document.addEventListener("DOMContentLoaded", function() {
-    const nav = document.querySelector("nav");
-    const navLinks = document.querySelectorAll("nav a");
-
-    navLinks.forEach(link => {
-        link.addEventListener("click", () => {
-            navLinks.forEach(otherLink => {
-                otherLink.classList.remove("active");
-            });
-            link.classList.add("active");
-        });
-    });
-});
-
-// Funcionalidad para los servidores
-document.addEventListener("DOMContentLoaded", function() {
-    const servidorLinks = document.querySelectorAll("#servidores a");
-
-    servidorLinks.forEach(link => {
-        link.addEventListener("click", () => {
-            const servidorId = link.dataset.servidorId;
-            const servidorInfo = document.querySelector(`#servidor-${servidorId}`);
-
-            servidorInfo.classList.toggle("visible");
-        });
-    });
-});
-
-// Funcionalidad para los mods
-document.addEventListener("DOMContentLoaded", function() {
-    const modLinks = document
-```
