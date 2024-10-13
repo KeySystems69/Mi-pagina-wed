@@ -1,15 +1,5 @@
-```
-/* Colores principales */
-:root {
-  --color-principal: #3498db; /* Azul claro */
-  --color-secundario: #2ecc71; /* Verde claro */
-  --color-fondo: #2f3436; /* Gris oscuro */
-  --color-texto: #fff; /* Blanco */
-  --color-boton: #4CAF50; /* Verde botón */
-  --color-boton-hover: #3e8e41; /* Verde botón hover */
-}
-
 /* Estilos generales */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,17 +7,18 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente Discord/Xbox */
-  background-color: var(--color-fondo);
-  color: var(--color-texto);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #2f3436;
+  color: #fff;
 }
 
 /* Encabezado */
+
 header {
-  background-color: var(--color-principal);
+  background-color: #23272A;
   padding: 1em;
   text-align: center;
-  border-bottom: 1px solid var(--color-secundario);
+  border-bottom: 1px solid #4CAF50;
   position: fixed;
   top: 0;
   width: 100%;
@@ -47,116 +38,23 @@ header nav li {
 }
 
 header nav a {
-  color: var(--color-texto);
+  color: #fff;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 header nav a:hover {
-  color: var(--color-secundario);
+  color: #4CAF50;
 }
 
-/* Sección de créditos */
-#creditos {
-  background-color: var(--color-secundario);
-  padding: 1em;
-  margin-bottom: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  width: 80%;
-  margin: 50px auto;
-}
+/* Botones */
 
-#creditos h2 {
-  margin-top: 0;
-  font-size: 24px;
-  color: var(--color-principal);
+.boton {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
-
-#creditos p {
-  color: var(--color-texto);
-}
-
-/* Sección de redes sociales */
-#redes-sociales {
-  background-color: var(--color-principal);
-  padding: 1em;
-  margin-bottom: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  width: 80%;
-  margin: 20px auto;
-}
-
-#redes-sociales h2 {
-  margin-top: 0;
-  font-size: 24px;
-  color: var(--color-texto);
-}
-
-#redes-sociales ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-#redes-sociales li {
-  margin-bottom: 10px;
-}
-
-#redes-sociales a {
-  text-decoration: none;
-  color: var(--color-texto);
-  transition: color 0.2s ease;
-}
-
-#redes-sociales a:hover {
-  color: var(--color-secundario);
-}
-
-/* Sección de publicaciones */
-#publicaciones {
-  background-color: var(--color-secundario);
-  padding: 1em;
-  margin-bottom: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  width: 80%;
-  margin: 20px auto;
-}
-
-#publicaciones h2 {
-  margin-top: 0;
-  font-size: 24px;
-  color: var(--color-principal);
-}
-
-#publicaciones article {
-  margin-bottom: 20px;
-}
-
-#publicaciones h3 {
-  font-size: 18px;
-  color: var(--color-texto);
-}
-
-#publicaciones p {
-  color: var(--color-texto);
-}
-
-#publicaciones img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-  border-radius: 10px;
-}
-
-/* Sección de servidores */
-#servidores {
-  background-color: var(--color-principal);
-  padding: 1em;
-  margin-bottom: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  width: 80%;
-  margin: 20px
