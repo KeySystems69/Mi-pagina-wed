@@ -1,73 +1,128 @@
+Aquí te dejo el código modificado:
+
+```
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ServemcPia</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ServemcPia</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#servidores">Servidores</a></li>
-                <li><a href="#mods">Mods</a></li>
-                <li><a href="#skins">Skins</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="creditos">
-            <h2>Créditos y Licencia</h2>
-            <p>Desarrollado por <a href="https://tu-sitio-web.example.com">Tu Nombre</a></p>
-            <p>Licencia: <a href="https://opensource.org/licenses/MIT">MIT License</a></p>
-            <p>Copyright (c) 2023 Tu Nombre. Todos los derechos reservados.</p>
-            <button><a href="#">Descargar</a></button>
-        </section>
-        <section id="redes-sociales">
-            <h2>Redes Sociales</h2>
-            <ul>
-                <li><a href="https://twitter.com/tu-cuenta" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
-                <li><a href="https://instagram.com/tu-cuenta" target="_blank"><i class="fa fa-instagram"></i> Instagram</a></li>
-                <li><a href="https://facebook.com/tu-cuenta" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
-                <li><a href="https://discord.gg/tu-codigo" target="_blank"><i class="fa fa-discord"></i> Discord</a></li>
-            </ul>
-            <button><a href="#">Unirse</a></button>
-        </section>
-        <section id="publicaciones">
-            <h2>Publicaciones Recientes</h2>
-            <article>
-                <h3>Título de la publicación</h3>
-                <p>Descripción de la publicación</p>
-                <img src="img/publicacion1.jpg" alt="Imagen de la publicación">
-                <button><a href="#">Leer más</a></button>
-            </article>
-            <article>
-                <h3>Título de la publicación</h3>
-                <p>Descripción de la publicación</p>
-                <img src="img/publicacion2.jpg" alt="Imagen de la publicación">
-                <button><a href="#">Leer más</a></button>
-            </article>
-        </section>
-        <section id="servidores">
-            <h2>Servidores</h2>
-            <ul>
-                <li>
-                    <h3>Servidor 1</h3>
-                    <p>Descripción del servidor</p>
-                    <p>IP: servidor1.example.com</p>
-                    <p>Version: 1.18.2</p>
-                    <button><a href="#">Unirse</a></button>
-                </li>
-                <li>
-                    <h3>Servidor 2</h3>
-                    <p>Descripción del servidor</p>
-                    <p>IP: servidor2.example.com</p>
-                    <p>Version: 1.19.2</p>
-                    <button><a href="#">Unirse</a></button>
-                </li>
-            </ul>
-        </section>
-    </main>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#servidores">Servidores</a></li>
+        <li><a href="#mods">Mods</a></li>
+        <li><a href="#skins">Skins</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="contenedor">
+      <h1>Bienvenido a ServemcPia</h1>
+      <button class="boton boton-xbox"><a href="https://xbox.com">Unirse a Xbox</a></button>
+      <button class="boton boton-discord"><a href="https://discord.com">Unirse a Discord</a></button>
+      <button class="boton boton-twitter"><a href="https://twitter.com">Seguir en Twitter</a></button>
+      <button class="boton boton-instagram"><a href="https://instagram.com">Seguir en Instagram</a></button>
+      <button class="boton boton-facebook"><a href="https://facebook.com">Seguir en Facebook</a></button>
+      <section id="servidores">
+        <h2>Servidores</h2>
+        <p>Lista de servidores disponibles:</p>
+        <ul>
+          <li>Servidor 1: <a href="https://servidor1.example.com">Unirse</a></li>
+          <li>Servidor 2: <a href="https://servidor2.example.com">Unirse</a></li>
+        </ul>
+      </section>
+      <section id="mods">
+        <h2>Mods</h2>
+        <p>Lista de mods disponibles:</p>
+        <ul>
+          <li>Mod 1: <a href="https://mod1.example.com">Descargar</a></li>
+          <li>Mod 2: <a href="https://mod2.example.com">Descargar</a></li>
+        </ul>
+      </section>
+      <section id="skins">
+        <h2>Skins</h2>
+        <p>Lista de skins disponibles:</p>
+        <ul>
+          <li>Skin 1: <a href="https://skin1.example.com">Descargar</a></li>
+          <li>Skin 2: <a href="https://skin2.example.com">Descargar</a></li>
+        </ul>
+      </section>
+      <section id="creditos">
+        <h2>Créditos y Licencia</h2>
+        <p>Desarrollado por <a href="https://tu-sitio-web.example.com">Tu Nombre</a></p>
+        <p>Licencia: <a href="https://opensource.org/licenses/MIT">MIT License</a></p>
+        <p>Copyright (c) 2023 Tu Nombre. Todos los derechos reservados.</p>
+      </section>
+    </div>
+  </main>
 </body>
 </html>
+```
+
+Y aquí te dejo el CSS modificado:
+
+```
+/* Estilos generales */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #2f3436;
+  color: #fff;
+}
+
+/* Encabezado */
+
+header {
+  background-color: #23272A;
+  padding: 1em;
+  text-align: center;
+  border-bottom: 1px solid #4CAF50;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav li {
+  margin-right: 20px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+header nav a:hover {
+  color: #4CAF50;
+}
+
+/* Botones */
+
+.boton {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+```
