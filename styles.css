@@ -1,3 +1,98 @@
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2c0038; /* Morado oscuro */
+    color: #fff; /* Blanco */
+}
+
+/* Colores principales */
+
+.primary-color {
+    background-color: #7a288a; /* Morado neón */
+    color: #fff; /* Blanco */
+}
+
+.secondary-color {
+    background-color: #8b0a1a; /* Rojo oscuro */
+    color: #fff; /* Blanco */
+}
+
+/* Efectos hover */
+
+.primary-color:hover {
+    background-color: #9c33c5; /* Morado neón claro */
+}
+
+.secondary-color:hover {
+    background-color: #a50f2f; /* Rojo oscuro claro */
+}
+
+/* Textos */
+
+h1, h2, h3, h4, h5, h6 {
+    color: #7a288a; /* Morado neón */
+}
+
+p, a {
+    color: #fff; /* Blanco */
+}
+
+a:hover {
+    color: #9c33c5; /* Morado neón claro */
+}
+
+/* Botones */
+
+.button {
+    background-color: #7a288a; /* Morado neón */
+    color: #fff; /* Blanco */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #9c33c5; /* Morado neón claro */
+}
+
+/* Enlaces */
+
+.link {
+    text-decoration: none;
+    color: #7a288a; /* Morado neón */
+}
+
+.link:hover {
+    color: #9c33c5; /* Morado neón claro */
+}
+
+/* Fondos */
+
+.background-primary {
+    background-color: #2c0038; /* Morado oscuro */
+}
+
+.background-secondary {
+    background-color: #8b0a1a; /* Rojo oscuro */
+}
+
+/* Bordes */
+
+.border-primary {
+    border: 1px solid #7a288a; /* Morado neón */
+}
+
+.border-secondary {
+    border: 1px solid #8b0a1a; /* Rojo oscuro */
+}
 ```
 /* Estilos generales */
 body {
