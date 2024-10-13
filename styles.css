@@ -37,16 +37,9 @@ nav a {
     text-decoration: none;
 }
 
-/* Publicaciones y post */
+/* Sección de créditos */
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2em;
-}
-
-section {
+#creditos {
     background-color: #fff; /* Blanco */
     padding: 1em;
     margin-bottom: 20px;
@@ -54,48 +47,143 @@ section {
     border-radius: 10px;
 }
 
-h2 {
+#creditos h2 {
     margin-top: 0;
     font-size: 24px;
     color: #333;
 }
 
-article {
+#creditos p {
+    color: #666;
+}
+
+/* Sección de redes sociales */
+
+#redes-sociales {
+    background-color: #fff; /* Blanco */
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#redes-sociales h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+#redes-sociales ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#redes-sociales li {
+    margin-bottom: 10px;
+}
+
+#redes-sociales a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+/* Sección de privacidad y soporte */
+
+#privacidad-soporte {
+    background-color: #fff; /* Blanco */
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#privacidad-soporte h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+#privacidad-soporte p {
+    color: #666;
+}
+
+/* Sección de publicaciones */
+
+#publicaciones {
+    background-color: #fff; /* Blanco */
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#publicaciones h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+#publicaciones article {
     margin-bottom: 20px;
 }
 
-h3 {
+#publicaciones h3 {
     font-size: 18px;
     color: #7a288a; /* Morado neón */
 }
 
-p {
+#publicaciones p {
     color: #666;
 }
 
-img {
+#publicaciones img {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
     border-radius: 10px;
 }
 
-a {
-    text-decoration: none;
-    color: #337ab7;
-}
+/* Sección de post del canal */
 
-a:hover {
-    color: #23527c;
-}
-
-/* Footer */
-
-footer {
-    background-color: #2c0038; /* Morado oscuro */
-    color: #fff; /* Blanco */
+#post {
+    background-color: #fff; /* Blanco */
     padding: 1em;
-    text-align: center;
-    clear: both;
-    border-top: 1px solid #444;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
+
+#post h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+#post article {
+    margin-bottom: 20px;
+}
+
+#post h3 {
+    font-size: 18px;
+    color: #7a288a; /* Morado neón */
+}
+
+#post p {
+    color: #666;
+}
+
+#post img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+/* Sección de servidores */
+
+#servidores {
+    background-color: #fff; /* Blanco */
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,
