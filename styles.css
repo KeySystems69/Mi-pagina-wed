@@ -1,9 +1,12 @@
+```
 /* Colores principales */
 :root {
   --color-principal: #3498db; /* Azul claro */
   --color-secundario: #2ecc71; /* Verde claro */
   --color-fondo: #2f3436; /* Gris oscuro */
   --color-texto: #fff; /* Blanco */
+  --color-boton: #4CAF50; /* Verde botón */
+  --color-boton-hover: #3e8e41; /* Verde botón hover */
 }
 
 /* Estilos generales */
@@ -14,7 +17,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente Discord/Xbox */
   background-color: var(--color-fondo);
   color: var(--color-texto);
 }
@@ -25,6 +28,10 @@ header {
   padding: 1em;
   text-align: center;
   border-bottom: 1px solid var(--color-secundario);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 header nav ul {
@@ -42,6 +49,11 @@ header nav li {
 header nav a {
   color: var(--color-texto);
   text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+header nav a:hover {
+  color: var(--color-secundario);
 }
 
 /* Sección de créditos */
@@ -51,6 +63,8 @@ header nav a {
   margin-bottom: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  width: 80%;
+  margin: 50px auto;
 }
 
 #creditos h2 {
@@ -70,6 +84,8 @@ header nav a {
   margin-bottom: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  width: 80%;
+  margin: 20px auto;
 }
 
 #redes-sociales h2 {
@@ -91,6 +107,11 @@ header nav a {
 #redes-sociales a {
   text-decoration: none;
   color: var(--color-texto);
+  transition: color 0.2s ease;
+}
+
+#redes-sociales a:hover {
+  color: var(--color-secundario);
 }
 
 /* Sección de publicaciones */
@@ -100,6 +121,8 @@ header nav a {
   margin-bottom: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  width: 80%;
+  margin: 20px auto;
 }
 
 #publicaciones h2 {
@@ -135,47 +158,5 @@ header nav a {
   margin-bottom: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-}
-
-#servidores h2 {
-  margin-top: 0;
-  font-size: 24px;
-  color: var(--color-texto);
-}
-
-#servidores ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-#servidores li {
-  margin-bottom: 10px;
-}
-
-#servidores a {
-  text-decoration: none;
-  color: var(--color-texto);
-}
-
-/* Animaciones */
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slide-in {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-/* Aplicar animaciones */
-header, #creditos, #red
+  width: 80%;
+  margin: 20px
